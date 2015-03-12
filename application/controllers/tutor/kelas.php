@@ -942,12 +942,13 @@ class Kelas extends CI_Controller {
 		$rows['name'] = 'Total Login';
 		foreach ($data_detail->result() as $r)
 		{
-		$bln['data'][] = $r['BULAN'];
-		$rows['data'][] = $r['JUMLAH'];
+		$bln['data'][] = $r->BULAN;
+		$rows['data'][] = $r->JUMLAH;
 		}
 		$rslt = array();
 		array_push($rslt, $bln);
 		array_push($rslt, $rows);
+		//print_r($rslt);
 		echo json_encode($rslt, JSON_NUMERIC_CHECK);
 	}
 }

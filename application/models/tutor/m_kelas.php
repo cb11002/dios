@@ -619,10 +619,7 @@ class M_kelas extends CI_Model{
 		$this->db->group_by('Name');
 		$query = $this->db->get();
 		
-		
-		
-
-			return $query;
+		return $query;
 		
 		
 	

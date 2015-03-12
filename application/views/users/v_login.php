@@ -35,7 +35,7 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form role="form" method="POST" action="<? echo base_url()."users/verifylogin"?>">
+                            <form role="form" method="POST" action="<?php echo base_url();?>users/verifylogin">
                                 <h1>Log in</h1> 
 								
                                 <p> 
@@ -56,7 +56,7 @@
 								</p>
                                 <p class="change_link">
 									Not a member yet ?
-									<a href="<?php echo base_url()."users/register_account";?>" " class="to_register">Join us</a>
+									<a href="<?php echo base_url()."users/register_account";?>" class="to_register">Join us</a>
 									
 								</p>
                             </form>
